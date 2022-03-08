@@ -2,7 +2,7 @@ package com.workshop.Banking;
 
 public class SavingAccount {
 	/*
-     * Declaring variable */
+     * Declaring variables */
 	
      private static double annualInterstaRate;
      private double savingBalance;
@@ -27,7 +27,7 @@ public class SavingAccount {
 	 * */
     public double calculateMonthlyIntrest(double savingBalance) {
     	double monthlyIntrest;
-    	monthlyIntrest=(annualInterstaRate*savingBalance)/12;
+    	monthlyIntrest=((annualInterstaRate/100)*savingBalance)/12;
     	return savingBalance += monthlyIntrest;
     }
     
